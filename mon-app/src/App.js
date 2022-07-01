@@ -1,8 +1,8 @@
-
 import "./dist/style.css";
+import H1 from './components/H1';
 
 function App() {
-  return <h1>Bonjour, monde !</h1>;
+  return <H1/>
 }
 
 export default App;

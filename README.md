@@ -1,4 +1,4 @@
-![Design preview for the Expenses chart component coding challenge](design/desktop-preview.jpg)
+![Design preview for the Expenses chart component coding challenge](./mon-app/src/design/desktop-preview.jpg)
 
 <h1 align="center">Expenses chart component</h1>
 
@@ -33,8 +33,7 @@ You can use any tools you like to help you complete the challenge. So if you've 
 We provide the data for the chart in a local `data.json` file. So you can use that to dynamically add the bars if you choose.
 <br><br>Users should be able to:
 <br>1. View the bar chart and hover over the individual bars to see the correct amounts for each day.
-<br>
-2. See the current day's bar highlighted in a different colour to the other bars
+<br> 2. See the current day's bar highlighted in a different colour to the other bars
 
 <br>
 3. View the optimal layout for the content depending on their device's screen size.
@@ -45,5 +44,3 @@ We provide the data for the chart in a local `data.json` file. So you can use th
 5. **Bonus**: See dynamically generated bars based on the data provided in the local JSON file
 
 <br> <p>I do not have access to the Figma sketch so the design is not pixel perfect.</p>
-
-
