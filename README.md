@@ -1,4 +1,4 @@
-![Design preview for the Expenses chart component coding challenge](./mon-app/src/design/desktop-preview.jpg)
+![Design preview for the Expenses chart component coding challenge](./mon-app/design/desktop-design.jpg)
 
 <h1 align="center">Expenses chart component</h1>
 

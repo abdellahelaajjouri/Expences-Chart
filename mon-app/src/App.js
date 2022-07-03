@@ -1,10 +1,10 @@
 import Header from "./components/header";
-import Table from "./components/table";
+import Body from "./components/body";
 function App() {
   return (
     <main id="card">
       <Header />
-      <Table />
+      <Body />
     </main>
   );
 }

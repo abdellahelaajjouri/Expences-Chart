@@ -32,16 +32,19 @@ body {
 }
 
 /* Typography */
-h1,
 h2,
 h3 {
   font-weight: 700;
-  line-height: 1.1;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 2rem;
 }
 p {
-  margin-top: 0;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 a,
@@ -49,7 +52,7 @@ a:visited,
 a:active {
   text-decoration: none;
 }
-
+/* ------------------------Starting From here--------- */
 #card {
   position: fixed;
   left: 50%;
@@ -69,18 +72,86 @@ a:active {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
-#card__header {
+
+/* Card Header */
+
+.card__header {
   background-color: var(--Soft-red);
-  height: 5rem;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
 }
-#card__body {
-  background-color: white;
-  height: 40rem;
-  margin-top: 1rem;
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--text-color);
 }
 
+.header__content__subtitle {
+  font-size: 14px;
+  font-weight: lighter;
+}
+.header__content__title {
+  font-size: 1.5rem;
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Body */
+
+.card__body {
+  background-color: white;
+  height: 34rem;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+.card__body__header {
+  height: 20%;
+}
+
+.card__body__content {
+  height: 50%;
+}
+
+hr {
+  border: 1.2px solid var(--Soft-red);
+  background-color: var(--Soft-red);
+  /* width: 2px; */
+  opacity: 0.6;
+}
+
+.card__body__footer {
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__content__subtitle {
+  margin-bottom: 0.5rem;
+}
+
+.footer__aside__title {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  text-align: end;
+}
+
+/* Media query */
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   .common {
     width: 22rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .card__body {
+    padding: 1rem;
   }
 }
