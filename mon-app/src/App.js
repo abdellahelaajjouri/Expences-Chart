@@ -1,8 +1,12 @@
-import "./dist/style.css";
-import H1 from './components/H1';
-
+import Header from "./components/header";
+import Table from "./components/table";
 function App() {
-  return <H1/>
+  return (
+    <main id="card">
+      <Header />
+      <Table />
+    </main>
+  );
 }
 
 export default App;
