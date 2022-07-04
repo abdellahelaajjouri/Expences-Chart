@@ -85,13 +85,13 @@ a:active {
 .header__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   color: var(--text-color);
 }
 
 .header__content__subtitle {
   font-size: 14px;
   font-weight: lighter;
+  margin-bottom: 0.3rem;
 }
 .header__content__title {
   font-size: 1.5rem;
@@ -117,17 +117,24 @@ a:active {
 
 .card__body__content {
   height: 50%;
+  display: flex;
+}
+.card__body__content div {
+  flex-basis: 14.28%;
+  align-self: flex-end;
+  text-align: center;
+  margin: 0.5rem;
 }
 
 hr {
   border: 1.2px solid var(--Soft-red);
   background-color: var(--Soft-red);
   /* width: 2px; */
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .card__body__footer {
-  height: 30%;
+  height: 25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,6 +142,10 @@ hr {
 
 .footer__content__subtitle {
   margin-bottom: 0.5rem;
+}
+
+.footer__content__title {
+  font-size: 2.5rem;
 }
 
 .footer__aside__title {
@@ -153,5 +164,8 @@ hr {
   }
   .card__body {
     padding: 1rem;
+  }
+  .footer__content__title {
+    font-size: 1.5rem;
   }
 }

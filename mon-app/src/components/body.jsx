@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ExpensesChart from "./ExpensesChart";
 class Body extends Component {
   state = {};
   render() {
@@ -8,7 +9,7 @@ class Body extends Component {
           <h2>Spending - Last 7 days </h2>
         </header>
 
-        <main className="card__body__content">Expenses Chart</main>
+        <ExpensesChart />
 
         <hr />
 
