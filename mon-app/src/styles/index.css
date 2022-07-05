@@ -112,11 +112,11 @@ a:active {
 }
 
 .card__body__header {
-  height: 20%;
+  height: 10%;
 }
 
 .card__body__content {
-  height: 50%;
+  height: 65%;
   display: flex;
 }
 .card__body__content div {
@@ -124,6 +124,43 @@ a:active {
   align-self: flex-end;
   text-align: center;
   margin: 0.5rem;
+}
+.card__body__content div .bar {
+  background-color: var(--Soft-red);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+.col1 .bar {
+  height: calc(395px * calc(17.45 / 100));
+}
+.col2 .bar {
+  height: calc(395px * calc(34.91 / 100));
+}
+.col3 .barO {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 0.5rem;
+  height: calc(395px * calc(52.36 / 100));
+  background-color: var(--Cyan);
+}
+.col4 .bar {
+  height: calc(395px * calc(31.07 / 100));
+}
+.col5 .bar {
+  height: calc(395px * calc(23.39 / 100));
+}
+.col6 .bar {
+  height: calc(395px * calc(43.28 / 100));
+}
+.col7 .bar {
+  height: calc(395px * calc(25.48 / 100));
 }
 
 hr {
@@ -167,5 +204,9 @@ hr {
   }
   .footer__content__title {
     font-size: 1.5rem;
+  }
+  .card__body__content div,
+  .card__body__content div .bar {
+    margin: 0.2rem;
   }
 }
