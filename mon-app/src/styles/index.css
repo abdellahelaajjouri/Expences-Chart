@@ -86,6 +86,7 @@ a:active {
   display: flex;
   flex-direction: column;
   color: var(--text-color);
+  align-self: center;
 }
 
 .header__content__subtitle {
