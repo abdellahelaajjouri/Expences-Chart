@@ -84,6 +84,7 @@ a:active {
 }
 .header__content {
   display: flex;
+  align-self: center;
   flex-direction: column;
   color: var(--text-color);
 }
