@@ -52,7 +52,8 @@ a:visited,
 a:active {
   text-decoration: none;
 }
-/* ------------------------Starting From here--------- */
+
+/* Common stuff */
 #card {
   position: fixed;
   left: 50%;
@@ -70,8 +71,15 @@ a:active {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
-  -o-border-radius: 15px;
 }
+.card__body__content div {
+  flex-basis: 14.28%;
+  align-self: flex-end;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+/* ------------------------Starting From here--------- */
 
 /* Card Header */
 
@@ -119,12 +127,6 @@ a:active {
 .card__body__content {
   height: 50%;
   display: flex;
-}
-.card__body__content div {
-  flex-basis: 14.28%;
-  align-self: flex-end;
-  text-align: center;
-  margin: 0.5rem;
 }
 
 hr {
