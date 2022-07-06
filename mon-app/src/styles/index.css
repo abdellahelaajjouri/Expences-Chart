@@ -45,6 +45,7 @@ p {
   font-size: 16px;
   margin: 0;
   padding: 0;
+  font-weight: 100;
 }
 
 a,
@@ -52,7 +53,8 @@ a:visited,
 a:active {
   text-decoration: none;
 }
-/* ------------------------Starting From here--------- */
+
+/* Common stuff */
 #card {
   position: fixed;
   left: 50%;
@@ -72,6 +74,24 @@ a:active {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
+
+.card__body__content div {
+  flex-basis: 14.28%;
+  align-self: flex-end;
+  text-align: center;
+  margin: 0.5rem;
+}
+.card__body__content div .bar {
+  background-color: var(--Soft-red);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+/* ------------------------Starting From here--------- */
 
 /* Card Header */
 
@@ -117,24 +137,10 @@ a:active {
 }
 
 .card__body__content {
-  height: 65%;
+  height: 312px;
   display: flex;
 }
-.card__body__content div {
-  flex-basis: 14.28%;
-  align-self: flex-end;
-  text-align: center;
-  margin: 0.5rem;
-}
-.card__body__content div .bar {
-  background-color: var(--Soft-red);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  margin-bottom: 0.5rem;
-}
+
 .col1 .bar {
   height: calc(395px * calc(17.45 / 100));
 }
@@ -175,6 +181,7 @@ hr {
   height: 25%;
   display: flex;
   justify-content: space-between;
+  align-self: center;
   align-items: center;
 }
 
@@ -209,5 +216,9 @@ hr {
   .card__body__content div,
   .card__body__content div .bar {
     margin: 0.2rem;
+  }
+  .card__body__footer {
+    height: 20%;
+    margin-top: 22px;
   }
 }
